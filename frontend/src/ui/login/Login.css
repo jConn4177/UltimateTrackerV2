@@ -1,0 +1,95 @@
+body .custom-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eaeaea;
+}
+
+body .custom-login .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+body .custom-login .login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 541px;
+  padding: 20px 1px;
+  border-radius: 20px;
+  border: 3px solid #868686;
+  background: #ffbf69;
+}
+
+body .custom-login .login-card .login-logo {
+  width: 257px;
+  height: 257px;
+  border-radius: 20px;
+  border: 3px solid #868686;
+  background: #2ec4b6;
+}
+
+body .custom-login .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+body .custom-login .login-form .form-control {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  border: 3px solid #868686;
+  padding: 0 15px;
+}
+
+body .custom-login .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+body .custom-login .login-button,
+body .custom-login .register-button {
+  width: 167px;
+  height: 52px;
+  border-radius: 10px;
+  border: 3px solid #868686;
+  background: #2ec4b6;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+body .custom-login .login-button:disabled {
+  background: #97d9d7;
+}
+
+/* Placeholder styling, if needed, can be applied globally if input placeholders share the same style */
+::placeholder {
+  color: #868686;
+}
+
+body .custom-login .login-button:hover,
+body .custom-login .register-button:hover {
+  background: #cbf3f0;
+  border-color: #868686;
+}
+
+/* Additional styles to remove card default styles if they exist */
+body .card {
+  background: none;
+  border: none;
+}
+
+body .card-body {
+  padding: 0;
+}

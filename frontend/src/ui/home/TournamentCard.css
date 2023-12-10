@@ -1,0 +1,18 @@
+body .tournament-card {
+  border-radius: 10px;
+  border: 1px solid #868686;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  /* Hover effect */
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.tournament-card .card-body {
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

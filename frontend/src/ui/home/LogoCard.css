@@ -1,0 +1,45 @@
+#home-page-container .card.logo-card {
+  width: 607px; /* Adjust the width as needed */
+  background-color: #2ec4b6;
+  border-radius: 20px;
+  border: 3px solid #868686;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth, optional */
+  color: #333; /* Adjust the font color as needed */
+  margin-bottom: 1rem; /* Space below the card */
+}
+
+#home-page-container .card.logo-card .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-image {
+  width: 100px; /* Adjust according to the actual logo size */
+  height: auto;
+}
+
+body .app-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#home-page-container .card.logo-card .btn.organize-tournament-button,
+#home-page-container .card.logo-card .btn.my-tournaments-button {
+  font-size: 1rem; /* Adjust the font size as needed */
+  color: white;
+  background-color: #ff9f1c;
+  border: 3px solid #868686;
+  margin: 0.5rem;
+  border-radius: 10px;
+  width: 158px;
+  height: 66px;
+}
+
+#home-page-container .card.logo-card .btn.organize-tournament-button:hover,
+#home-page-container .card.logo-card .btn.my-tournaments-button:hover {
+  background-color: #e68a00; /* Slightly darker on hover */
+}

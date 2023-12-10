@@ -1,0 +1,28 @@
+body .navbar.custom-navbar {
+  display: flex;
+  width: 100%;
+  height: 58px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background: #ffbf69;
+}
+
+body .custom-navbar .login-button .login-image {
+  vertical-align: baseline;
+}
+
+body .navbar.custom-navbar .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+body .navbar.custom-navbar .navbar-nav {
+  margin-left: auto;
+}
+
+body .custom-navbar .-button:hover {
+  background: #cbf3f0;
+  border-color: #868686;
+}

@@ -1,0 +1,102 @@
+/* Register.css */
+
+/* General styles for the registration page, similar to the login page */
+body .custom-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eaeaea;
+}
+
+body .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+body .register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 541px;
+  padding: 20px 1px;
+  border-radius: 20px;
+  border: 3px solid #868686;
+  background: #ffbf69;
+  margin-top: 80px;
+}
+
+body .register-logo {
+  width: 257px;
+  height: 257px;
+  border-radius: 20px;
+  border: 3px solid #868686;
+  background: #2ec4b6;
+}
+
+body .register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+body .form-control {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  border: 3px solid #868686;
+  padding: 0 15px;
+}
+
+body .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+body .register-button {
+  width: 167px;
+  height: 52px;
+  border-radius: 10px;
+  border: 3px solid #868686;
+  background: #2ec4b6;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+body .register-button:disabled {
+  background: #97d9d7;
+}
+
+body .register-button:hover {
+  background: #cbf3f0;
+  border-color: #868686;
+}
+
+.errmsg {
+}
+
+.offscreen {
+  /* Your offscreen styling for error messages */
+}
+
+::placeholder {
+  color: #868686;
+}
+
+.card {
+  background: none;
+  border: none;
+}
+
+.card-body {
+  padding: 0;
+}
