@@ -46,8 +46,8 @@ const Register = () => {
 
   return (
     <div className="custom-register">
-      <Container className="register-container">
-        <Card className="register-card">
+      <Container className="player-register-container">
+        <Card className="player-register-card">
           <Image className="register-logo" src="../images/image17.png" />
           <Card.Body>
             <RegisterForm

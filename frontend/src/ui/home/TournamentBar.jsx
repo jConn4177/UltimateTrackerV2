@@ -24,9 +24,17 @@ function TournamentBar() {
   return (
     <Container id="tournament-bar" className="my-3">
       <Row xs={1} md={2} lg={4} className="g-4">
-        {filteredTournaments?.map((tournament) => (
-          <TournamentCard key={tournament.id} tournament={tournament} />
-        ))}
+        {tournaments &&
+          tournaments.map(
+            (tournament) =>
+              tournament &&
+              tournament.tournament_id && (
+                <TournamentCard
+                  key={tournament.tournament_id}
+                  tournament={tournament}
+                />
+              )
+          )}
       </Row>
     </Container>
   );

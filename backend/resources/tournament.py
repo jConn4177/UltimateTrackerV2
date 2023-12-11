@@ -20,15 +20,17 @@ class TournamentResource(Resource):
             return err.messages, 400
 
         tournament.name = args['name'],
-        tournament.format=args['format'],
-        tournament.venue=args['venue'],
-        tournament.start_date=args['start_date'],
-        tournament.end_date=args['end_date'],
+        tournament.format = args['format'],
+        tournament.venue = args['venue'],
+        tournament.start_date = args['start_date'],
+        tournament.end_date = args['end_date'],
         tournament.rules = args['rules']
         tournament.player_cap = args['player_cap']
         tournament.entry_cost = args['entry_cost']
         tournament.start_time = args['start_time']
-        tournament.stage = 'next_stage'  # Update this as required
+
+        if args.get('isFormSubmitted'):
+            tournament.stage = 'Active'
 
         db.session.commit()
         return tournament_schema.dump(tournament)

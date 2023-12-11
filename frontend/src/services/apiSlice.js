@@ -85,6 +85,14 @@ export const apiSlice = createApi({
       query: () => "/users",
       keepUnusedDataFor: 5,
     }),
+
+    updateTournament: builder.mutation({
+      query: ({ id, ...patchData }) => ({
+        url: `/tournaments/${id}`,
+        method: "PUT",
+        body: patchData,
+      }),
+    }),
   }),
   // ... other endpoints ...
 });
@@ -96,4 +104,5 @@ export const {
   useRegisterMutation,
   useGetTournamentsQuery,
   useGetTournamentByIdQuery,
+  useUpdateTournamentMutation,
 } = apiSlice;

@@ -13,7 +13,7 @@ body .custom-tournament-page .tournament-container {
   width: 100%;
 }
 
-body .custom-tournament-page .tournament-card {
+body .custom-tournament-page .tournamentpage-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@ body .custom-tournament-page .tournament-card {
   background: #ffbf69;
 }
 
-body .custom-tournament-page .tournament-card h1 {
+body .custom-tournament-page .tournamentpage-card h1 {
   font-size: 2rem;
   color: #2ec4b6;
   border-bottom: 3px solid #868686;
@@ -51,14 +51,14 @@ body .custom-tournament-page .tournament-details p {
 }
 
 /* Additional styles to remove card default styles if they exist */
-body .card {
+/* body .card {
   background: none;
   border: none;
 }
 
 body .card-body {
   padding: 0;
-}
+} */
 
 /* Styling for additional tournament details if needed */
 body .custom-tournament-page .additional-details {
@@ -71,7 +71,7 @@ body .custom-tournament-page .additional-details {
 
 /* Responsive adjustments if needed */
 @media (max-width: 768px) {
-  body .custom-tournament-page .tournament-card {
+  body .custom-tournament-page .tournamentpage-card {
     width: 90%;
     padding: 20px;
   }
