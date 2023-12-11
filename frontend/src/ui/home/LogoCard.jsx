@@ -4,7 +4,7 @@ import "./LogoCard.css";
 
 function LogoCard({ errRef, navigate }) {
   const handleMyTournamentClick = () => {
-    navigate();
+    navigate("/my-tournaments");
   };
   const handleOrganizeClick = () => {
     navigate("/tournaments/new");
